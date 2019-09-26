@@ -1,4 +1,6 @@
 function weight = hebbLearning(weight,P,t)
+%P is the matrix that represents the gates
+%T is the target vector we are hoping to get
 %This function returns the weights of 
 %the gates that we are going to need
     for i = 1:length(weight)
@@ -10,3 +12,4 @@ function weight = hebbLearning(weight,P,t)
         weight(i)=weight(i)./length(P(:,1));
     end
 end
+%The weights are returned
